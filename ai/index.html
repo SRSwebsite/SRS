@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>فرم انتشار</title>
+	 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Vazir:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="file/ai form.css"> <!-- لینک به فایل CSS -->
+    
+</head>
+<body>
+<div class="container">
+        
+        <div id="result"></div>
+        <iframe id="unique-siteFrame" class="unique-iframe" src="" title="نمایش سایت"></iframe>
+    </div>
+<button id="sidebar-toggle"><i class="fas fa-bars"></i></button>
+ <div id="sidebar">
+    <header>
+      <span>SRS_ai</span>
+    </header>
+   <div class="content">
+      <div class="accordion">
+        <button>منو</button>
+        <div class="panel">
+          <a href="index.html">پنل مدیر</a>
+          <a href="01_Pic editor.html">ادیتور عکس</a>
+          <a href="02_Pic uploader.html">آپلود عکس</a>
+          <a href="03_pro maker.html">ساخت پروژه</a>
+          <a href="04_pro uploader.html">آپلود پروژه</a>
+          <a href="05_manger form.html">فرم مجوز انتشار</a>
+		   <a href="06_hamkar form.html">فرم انتشار همکار</a>
+		   <a href="07_manager learn form.html">فرم انتشار آموزش ها</a>
+		   <a href="personal form.html">باشگاه مشتریان</a>
+		   <a href="student form">فرم ثبت نام هنرجویان</a>
+        </div>
+      </div>
+    </div>
+	
+	<!-- فیلد ورودی با متن ثابت -->
+        
+		
+		<button id="fixed-link-button" class="unique-button" onclick="loadFixedLink()">نقشه</button>
+		 <input type="hidden" id="combinedText" name="combinedText">
+		
+     <form id="myForm" method="POST">
+  <label>مختصات جغرافیایی:</label>
+  <input type="text" name="coordinates" required placeholder="مثال: 30.2905, 57.0749"><br>
+
+  <label>تعداد طبقات:</label>
+  <input type="number" name="floors" required><br>
+
+  <label>نوع مصالح:</label>
+  <select name="material" required>
+    <option value="سنتی">سنتی</option>
+    <option value="اسکلت فلزی">اسکلت فلزی</option>
+    <option value="اسکلت بتنی">اسکلت بتنی</option>
+    <option value="مصالح سبک">مصالح سبک</option>
+  </select><br>
+
+  <label>کاربری ساختمان:</label>
+  <select name="usage" required>
+    <option value="مسکونی">مسکونی</option>
+    <option value="تجاری">تجاری</option>
+    <option value="اداری">اداری</option>
+    <option value="مختلط">مختلط</option>
+  </select><br>
+
+  <input type="submit" value="محاسبه قیمت">
+</form>
+
+
+	 </div>
+	 
+	<script src="file/ai form.js" defer></script> <!-- لینک به فایل JavaScript -->
+</body>
+</html>
